@@ -1,0 +1,21 @@
+name: CI Basic Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run application check script
+        run: |
+          chmod +x ./app/check_app.sh
+          ./app/check_app.sh
+
+      - name: Display index.html content
+        run: cat ./app/index.html
