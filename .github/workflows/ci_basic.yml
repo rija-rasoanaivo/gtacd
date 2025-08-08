@@ -14,9 +14,9 @@ jobs:
 
       - name: Run application check script
         run: |
-          chmod +x ./gtacd/app/check_app.sh
-          chmod +x ./gtacd/app/var.sh
-          ./gtacd/app/check_app.sh
+          chmod +x ./app/check_app.sh
+          chmod +x ./app/var.sh
+          ./app/check_app.sh
 
       - name: Display index.html content
-        run: cat ./gtacd/app/index.html
+        run: cat ./app/index.html
