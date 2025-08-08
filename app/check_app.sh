@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source var.sh
+source ./app/var.sh
+
 
 if [ -f "$FILE_PATH" ]; then
     echo "0"
