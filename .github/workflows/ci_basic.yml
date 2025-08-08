@@ -15,6 +15,7 @@ jobs:
       - name: Run application check script
         run: |
           chmod +x ./app/check_app.sh
+          chmod +x ./app/var.sh
           ./app/check_app.sh
 
       - name: Display index.html content
